@@ -1,0 +1,201 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase.js"></script>
+
+
+
+
+<style>
+.fondito{
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 80px;
+  padding-bottom: 100px;
+  width: 100%;
+   background-image: url("file:///C:/Users/ater_/Desktop/OP3/lcslogo2.jpg");
+   
+ 
+}
+
+.tablita{
+  background: #323232;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: #323232;
+ font-weight: bold;
+  color: #C27AFF;
+}
+
+#div {
+  
+ font-weight: bold;
+  color: black;
+  border:none;
+  background-color: #C0C0C0;
+  text-align: center;
+  font-size: 12px;
+  margin: 2px 1px;
+  height: 71;
+  width: 130;
+   padding-top: 1px;
+  padding-right: 1px;
+  padding-bottom: 1px;
+  padding-left: 1px;
+  
+ 
+}
+
+#div2 {
+  
+ font-weight: bold;
+  color: black;
+  border:none;
+  background-color: #C0C0C0;
+  font-size: 18px;
+  margin: 2px 1px;
+  height: 25;
+  width: 225;
+   padding-top: 1px;
+  padding-right: 1px;
+  padding-bottom: 1px;
+  padding-left: 1px;
+  
+ }
+#div3 {
+  
+ font-weight: bold;
+  color: black;
+  border:none;
+  background-color: #C0C0C0;
+  font-size: 15px;
+  margin: 2px 1px;
+  height: 25;
+  width: 1363;
+   padding-top: 1px;
+  padding-right: 1px;
+  padding-bottom: 1px;
+  padding-left: 1px;
+  
+  
+ }
+.div1 {
+ 
+  border: none;
+  color: black;
+  font-size: 14px;
+  margin: 2px 1px;
+  display: inline-block;
+   height: 20;
+  width: 23;
+  text-align: center;
+}
+
+</style>
+</head>
+<body class="fondito">
+ <div>
+<center>
+<div>
+  <table>
+    <tr>
+      <td id="div3" style="border:1px solid #4F4A4A;height: 25;width: 850;"><center>Modelo Actual (Est 15):</center></td>
+      <td id="div3" style="border:1px solid #4F4A4A;height: 25;width: 850;"><center><p id="modeloact"></p></center></td>
+    </tr>
+  </table>
+</div>
+<p></p>
+<table>
+      
+      <tr class="tablita">
+      
+      <td style="font-size: 20px;margin: 50px;border: 1px solid black;width: 150;"><center>12</center></td>
+      <td style="font-size: 20px;margin: 50px;border: 1px solid black;width: 150;"><center>13</center></td>
+      <td style="font-size: 20px;margin: 50px;border: 1px solid black;width: 150;"><center>14</center></td>
+      <td style="font-size: 20px;margin: 50px;border: 1px solid black;width: 150;"><center>15</center></td>
+      <td style="font-size: 20px;margin: 50px;border: 1px solid black;width: 150;"><center>16</center></td>
+      <td style="font-size: 20px;margin: 50px;border: 1px solid black;width: 150;"><center>17</center></td>
+      <td style="font-size: 20px;margin: 50px;border: 1px solid black;width: 150;"><center>18</center></td>
+      <td style="font-size: 20px;margin: 50px;border: 1px solid black;width: 150;"><center>19</center></td>
+      <td style="font-size: 20px;margin: 50px;border: 1px solid black;width: 150;"><center>20</center></td>
+    
+     </tr>
+<tr>
+  <td>
+    <p></p>
+  </td>
+</tr>
+
+</tr>
+<tr>  
+      <td colspan="3"></td>
+      <td><div id="div" class="panel panel-default">W10914403 MAIN HARNESS ULTRA US
+     <center>
+     <table>
+              <tr>
+                        <td>
+                      <div id="divmhtod1" class="div1">
+                      <p id="cajamht1"></p>
+                      </div>  
+                      </td>
+
+                      <td>
+                      <div id="divmhtod2"  class="div1">
+                      <p id="cajamht2"></p>
+                      </div>
+                    </td>
+                    </tr>
+             </table>
+     </center>
+     </div></td> 
+
+<tr>
+  <td>
+    <p></p>
+  </td>
+</tr>
+
+</tr>
+
+<tr>
+<td colspan="3"></td>
+<td><div id="div" class="panel panel-default">W10914402 MAIN HARNESS ULTRA USA
+<center>
+<table>
+              <tr>
+                      <td>
+                      <div id="divmhd1"  class="div1">
+                      <p id="cajamhd1"></p>
+                      </div>  
+                      </td>
+
+                      <td>
+                      <div id="divmhd2"class="div1">
+                      <p id="cajamhd2"></p>
+                      </div>
+                    </td>
+                    </tr>
+             </table>
+</center>
+</div></td> 
+</tr>
+
+</table>
+</center>
+ </div>
+</body>
+<script type="text/javascript" src="C:\Users\ater_\Desktop\OP3\Prototipo\jsdelhtml1.js">
+</script>
+</html>
